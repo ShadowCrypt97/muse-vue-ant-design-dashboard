@@ -11,7 +11,7 @@
 			<!-- Sign In Form Column -->
 			<a-col :span="24" :md="12" :lg="{span: 12, offset: 0}" :xl="{span: 6, offset: 2}" class="col-form">
 				<h1 class="mb-15">Sign In</h1>
-				<h5 class="font-regular text-muted">Enter your email and password to sign in</h5>
+				<h5 class="font-regular text-muted">Enter your username and password to sign in</h5>
 
 				<!-- Sign In Form -->
 				<a-form
@@ -21,12 +21,12 @@
 					@submit="handleSubmit"
 					:hideRequiredMark="true"
 				>
-					<a-form-item class="mb-10" label="Email" :colon="false">
+					<a-form-item class="mb-10" label="Username" :colon="false">
 						<a-input 
 						v-decorator="[
-						'email',
-						{ rules: [{ required: true, message: 'Please input your email!' }] },
-						]" placeholder="Email" />
+						'username',
+						{ rules: [{ required: true, message: 'Please input your username!' }] },
+						]" placeholder="Username" />
 					</a-form-item>
 					<a-form-item class="mb-5" label="Password" :colon="false">
 						<a-input

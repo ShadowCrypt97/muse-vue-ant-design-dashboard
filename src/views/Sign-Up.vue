@@ -10,7 +10,7 @@
 		<div class="sign-up-header" style="background-image: url('images/bg-signup.jpg')">
 			<div class="content">
 				<h1 class="mb-5">Sign Up</h1>
-				<p class="text-lg">Use these awesome forms to login or create new account in your project for free.</p>
+				<p class="text-lg">Bienvenidos a nuestra plataforma donde podrá encontrar muchos servicios al alcance de un click!</p>
 			</div>
 		</div>
 		<!-- / Sign Up Image And Headings -->
@@ -18,20 +18,8 @@
 		<!-- Sign Up Form -->
 		<a-card :bordered="false" class="card-signup header-solid h-full" :bodyStyle="{paddingTop: 0}">
 			<template #title>
-				<h5 class="font-semibold text-center">Register With</h5>
+				<h5 class="font-semibold text-center">Registrese</h5>
 			</template>
-			<div class="sign-up-gateways">
-    			<a-button>
-					<img src="images/logos/logos-facebook.svg" alt="">
-				</a-button>
-    			<a-button>
-					<img src="images/logos/logo-apple.svg" alt="">
-				</a-button>
-    			<a-button>
-					<img src="images/logos/Google__G__Logo.svg.png" alt="">
-				</a-button>
-			</div>
-			<p class="text-center my-25 font-semibold text-muted">Or</p>
 			<a-form
 				id="components-form-demo-normal-login"
 				:form="form"
@@ -45,6 +33,16 @@
 						{ rules: [{ required: true, message: 'Please input your name!' }] },
 						]"
 						placeholder="Name"
+					>
+					</a-input>
+				</a-form-item>
+				<a-form-item class="mb-10">
+					<a-input
+						v-decorator="[
+						'cedula',
+						{ rules: [{ required: true, message: 'Please input your cédula!' }] },
+						]"
+						placeholder="Cédula"
 					>
 					</a-input>
 				</a-form-item>
